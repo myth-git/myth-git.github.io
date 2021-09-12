@@ -18,9 +18,25 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>归档 - Hexo</title>
+  <title>Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/monokai-sublime.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -51,7 +67,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -150,9 +166,46 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-07-22 19:39" pubdate>
+        2021年7月22日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      409 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      4
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -165,52 +218,108 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 14 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/04/22/MyBatis/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">MyBatis</span>
-      <time style="float: right;">04-22</time>
-    </a>
-  
-    
-    <a href="/2021/04/20/Maven/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Maven</span>
-      <time style="float: right;">04-20</time>
-    </a>
-  
-    
-    <a href="/2021/04/19/%E6%88%91%E7%9A%84Java%E7%AC%94%E8%AE%B0/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">我的Java笔记</span>
-      <time style="float: right;">04-19</time>
-    </a>
-  
-</div>
 
-
-
-
-
-              </div>
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <h3 id="1-什么是springboot"><a href="#1-什么是springboot" class="headerlink" title="1.什么是springboot"></a>1.什么是springboot</h3><p><strong>什么是spring</strong></p>
+<ul>
+<li><p>spring是一个开源框架，2003年兴起的一个轻量级得Java开发框架</p>
+</li>
+<li><p>spring是为了解决企业级应用开发得复杂性而创建的，简化开发</p>
+</li>
+</ul>
+<p><strong>spring是如何简化Java开发的</strong></p>
+<p>为了降低Java开发的复杂性，spring采用了以下4种关键策略</p>
+<ol>
+<li>基于POJO的轻量级和最小侵入性编程，所有东西都是bean</li>
+<li>通过IOC，依赖注入（ID）和面向接口实现松耦合</li>
+<li>基于切面（AOP）和惯例进行声明式编程</li>
+<li>通过切面和模板减少样式代码，RedisTemplate,xxxTemplate</li>
+</ol>
+<p><strong>什么是springboot</strong></p>
+<ul>
+<li>就是一个Javaweb的开发框架，和springMVC类似，简化了开发，约定大于配置，能迅速开发应用</li>
+<li>springboot基于spring开发，不提供spring框架的核心特性以及扩展功能，只用于快速、敏捷开发新一代基于spring框架的应用程序，它默认帮我们进行了很多设置，同时集成了大量的第三方库配置（redis、mongoDB、Jpa、RabbitMQ、Quartz等等），springboot应用中这些第三方库几乎可以零配置的开箱即用</li>
+<li>简单说springboot不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，springboot整合了所有的框架</li>
+</ul>
+<p><strong>springboot的主要有点：</strong></p>
+<ol>
+<li>为所有的spring开发者更快入门</li>
+<li>开箱即用，提供各种默认配置来简化项目配置</li>
+<li>内嵌式容器简化web项目</li>
+<li>没有冗余代码生成和XML配置的要求</li>
+</ol>
+<h3 id="2-第一个springboot的程序"><a href="#2-第一个springboot的程序" class="headerlink" title="2.第一个springboot的程序"></a>2.第一个springboot的程序</h3>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/08/01/maven%E4%BE%9D%E8%B5%96%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/07/17/SpringMVC/">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -291,9 +400,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 
